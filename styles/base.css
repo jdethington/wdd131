@@ -9,5 +9,25 @@
     --secondary-background: green;
     --font-primary: white;
     --font-secondary: black;
-    
+
+}
+
+header {
+    display: grid;
+}
+
+main {
+    display: flex;
+}
+
+footer {
+    display: flex;
+}
+
+a {
+    background-color: var(--primary-background);
+}
+
+a:hover {
+    background-color: var(--secondary-background);
 }
