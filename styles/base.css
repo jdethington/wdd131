@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary-background: steelblue;
+    --primary-background: rgb(31, 61, 122);
     --secondary-background: #404040;
     --font-primary: white;
     --font-secondary: black;
@@ -63,7 +63,7 @@ nav a {
 }
 
 nav a:hover {
-    border: solid white 1px;
+    border: solid var(--font-primary) 1px;
     text-decoration: underline;
     color: yellow;
 }
