@@ -7,9 +7,9 @@
 :root {
     --primary-background: rgb(31, 61, 122);
     --secondary-background: #404040;
-    --font-primary: white;
-    --font-secondary: black;
-
+    --font-primary: rgb(240, 240, 240);
+    --font-secondary: rgb(0 0 0);
+    --font-hover: rgb(255 255 0);
 }
 
 body {
@@ -63,8 +63,8 @@ nav a {
 
 nav a:hover {
     border: solid var(--font-primary) 1px;
-    text-decoration: underline;
-    color: yellow;
+    /* text-decoration: underline; */
+    color: var(--font-hover);
 }
 
 main {
@@ -99,9 +99,9 @@ main img {
     height: auto;
 }
 
-section ul {
+/* section ul {
     padding: 2rem;
-}
+} */
 
 footer {
     background: var(--primary-background);
@@ -142,8 +142,13 @@ div p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 1.5rem;
 }
 
+.dev li {
+    margin: .5rem;
+    padding: .5rem;
+}
 
 .right {
     float: right;
