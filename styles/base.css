@@ -62,8 +62,8 @@ nav a {
 }
 
 nav a:hover {
-    border: solid var(--font-primary) 1px;
-    /* text-decoration: underline; */
+    /* border: solid var(--font-primary) 1px; */
+    text-decoration: underline;
     color: var(--font-hover);
 }
 
@@ -98,10 +98,6 @@ main img {
     max-width: 250px;
     height: auto;
 }
-
-/* section ul {
-    padding: 2rem;
-} */
 
 footer {
     background: var(--primary-background);
