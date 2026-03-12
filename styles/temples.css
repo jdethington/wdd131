@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+nav {
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+
+/* small navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "⫶☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    /* background-color: #333; */
+    /* color: #fff; */
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    /* color: #fff; */
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+.stuff {
+    margin: 0.5rem;
+    border: 1px solid rgb(0 0 0/0.1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+}
+
+/* large nav */
+@media (min-width: 512px) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .stuff {
+        margin: 1rem auto;
+    }
+}
+
+main {
+    display: grid;
+    justify-items: center;
+}
+
+main div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 0 1 auto;
+}
+
+figure {
+    margin: 1rem 0.75rem;
+    text-align: center;
+
+}
+
+img {
+    max-width: 190px;
+    height: auto;
+}
+
+footer {
+    background-color: antiquewhite;
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer p {
+    padding: .25rem;
+}
