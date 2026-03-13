@@ -17,6 +17,10 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+}
+
 header p {
     margin: 1rem;
     font-size: x-large;
@@ -24,6 +28,8 @@ header p {
 }
 
 nav {
+    display: flex;
+    align-items: center;
     max-width: 700px;
     margin: 1rem auto;
 }
