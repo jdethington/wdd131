@@ -1,0 +1,118 @@
+/*  Red: #BF0A30. 
+    Yellow: #FED700. 
+    Copper: #CE5C17. 
+    Blue: #002868. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --copper: #ce5c17;
+    --copper-50: rgb(206 92 23 / 75%);
+    --red: #bf0a30;
+    --yellow: #fed700;
+    --blue: #002868;
+    --font: Roboto, helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--font);
+}
+
+header,
+main,
+footer {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--blue);
+    color: var(--yellow);
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-top: 1rem solid var(--copper);
+    border-bottom: .5rem solid var(--copper);
+}
+
+
+
+.data-list div {
+    padding: .5rem;
+}
+
+.data-weather {
+    color: var(--blue);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--copper);
+}
+
+.data-weather img {
+    width: 50px;
+    height: auto;
+    margin: 1rem;
+}
+
+.data-list div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+}
+
+
+.data-list dt {
+    text-align: right;
+    font-weight: 700;
+}
+
+.data-list dd {
+    text-align: left;
+}
+
+dt::after {
+    content: ": ";
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--copper);
+    text-align: center;
+    padding: 1rem .5rem;
+}
+
+footer p {
+    padding: .5rem;
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        font-size: x-large;
+    }
+
+    .hero-large {
+        position: relative;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 3em;
+        right: 1.5em;
+        background-color: var(--copper-50);
+    }
+
+    .data {
+        position: absolute;
+        top: 3em;
+        left: 1.5em;
+        background-color: var(--copper-50);
+    }
+
+}

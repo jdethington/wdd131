@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="description" content="Place web page week 3 for Jacob Ethington in the WDD 131 ">
+    <meta name="author" content="Jacob Dwayne Ethington">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Arizona</h1>
+    </header>
+    <main class="hero-large">
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/arizona-desert-large.webp">
+                <source media="(min-width: 500px)" srcset="images/arizona-desert-medium.webp">
+                <img src="images/arizona-desert-small.webp" alt="Arizona desert" width="400" height="200">
+            </picture>
+        </div>
+        <section class="data-weather data">
+            <h2>Data</h2>
+            <dl class="data-list">
+                <div>
+                    <dt>Area</dt>
+                    <dd>113,998 sq miles</dd>
+                </div>
+                <div>
+                    <dt>Population</dt>
+                    <dd>7,623,818</dd>
+                </div>
+                <div>
+                    <dt>Capital</dt>
+                    <dd>Phoenix</dd>
+                </div>
+                <div>
+                    <dt>Languages</dt>
+                    <dd>English</dd>
+                </div>
+                <div>
+                    <dt>Currency</dt>
+                    <dd>U.S. Dollar $</dd>
+                </div>
+                <div>
+                    <dt>Time Zone</dt>
+                    <dd>UTC-7</dd>
+                </div>
+                <div>
+                    <dt>Calling Code</dt>
+                    <dd>+1</dd>
+                </div>
+                <div>
+                    <dt>Internet TLD</dt>
+                    <dd>.com</dd>
+                </div>
+            </dl>
+        </section>
+        <section class="data-weather weather">
+            <h2>Weather</h2>
+            <img src="images/895655_O9S1SH1.svg" alt="weather icon">
+            <dl class="data-list">
+                <div>
+                    <dt>Temperature</dt>
+                    <dd>100 &deg;F</dd>
+                </div>
+                <div>
+                    <dt>Conditions</dt>
+                    <dd>Sunny</dd>
+                </div>
+                <div>
+                    <dt>Wind</dt>
+                    <dd>5 mph</dd>
+                </div>
+                <div>
+                    <dt>Wind Chill</dt>
+                    <dd>101 &deg;F</dd>
+                </div>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
