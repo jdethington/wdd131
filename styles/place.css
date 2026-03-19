@@ -10,10 +10,11 @@
 
 :root {
     --copper: #ce5c17;
-    --copper-50: rgb(206 92 23 / 75%);
+    --copper-50: rgb(206 92 23 / 80%);
     --red: #bf0a30;
     --yellow: #fed700;
     --blue: #002868;
+    --black: #000;
     --font: Roboto, helvetica, sans-serif;
 }
 
@@ -56,7 +57,7 @@ header {
 }
 
 .data-weather img {
-    width: 50px;
+    width: 2rem;
     height: auto;
     margin: 1rem;
 }
@@ -102,17 +103,36 @@ footer p {
     }
 
     .weather {
-        position: absolute;
         bottom: 3em;
         right: 1.5em;
-        background-color: var(--copper-50);
     }
 
     .data {
-        position: absolute;
         top: 3em;
         left: 1.5em;
+    }
+
+    .data-weather {
+        position: absolute;
         background-color: var(--copper-50);
+        color: var(--black);
+    }
+
+    .data-weather h2 {
+        background-color: var(--blue);
+        color: var(--yellow);
+        text-align: left;
+        padding: 1rem 0 1rem 1rem;
+        margin-left: -2rem;
+    }
+
+    .later {
+        background-color: var(--blue);
+        display: flex;
+    }
+
+    footer {
+        font-size: smaller;
     }
 
 }
