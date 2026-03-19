@@ -67,14 +67,12 @@
         </section>
 
         <section class="data-weather weather">
-            <div class="later">
-                <h2>Weather</h2>
-                <img src="images/weather-icons.svg" alt="weather icon">
-            </div>
+            <h2 class="later">Weather</h2>
+            <img src="images/weather-icons.svg" alt="weather icon">
             <dl class="data-list">
                 <div>
                     <dt>Temperature</dt>
-                    <dd id="temp">100 &deg;F</dd>
+                    <dd><span id="temp">101</span>&deg;F</dd>
                 </div>
                 <div>
                     <dt>Conditions</dt>
@@ -82,11 +80,15 @@
                 </div>
                 <div>
                     <dt>Wind</dt>
-                    <dd id="wind">5 mph</dd>
+                    <dd><span id="wind">4.5</span> mph</dd>
                 </div>
                 <div>
-                    <dt>Wind Chill</dt>
-                    <dd>101 &deg;F</dd>
+                    <dt>Relative Humidity</dt>
+                    <dd><span id="humid">18</span>%</dd>
+                </div>
+                <div>
+                    <dt id="chillHeat">Wind Chill</dt>
+                    <dd><span id="windChill"></span>&deg;F</dd>
                 </div>
             </dl>
         </section>

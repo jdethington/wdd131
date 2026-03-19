@@ -120,13 +120,15 @@ footer p {
         margin-left: -2rem;
     }
 
-    .later {
-        background-color: var(--blue);
-        display: flex;
-    }
-
     footer {
         font-size: smaller;
     }
 
+    .later::after {
+        content: " ☀️";
+    }
+
+    section img {
+        display: none;
+    }
 }
