@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    padding: .5rem;
+}
