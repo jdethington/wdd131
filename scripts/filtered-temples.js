@@ -9,10 +9,6 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-// check for this code
-function toggleActive(element) {
-
-}
 
 // new code
 const temples = [
@@ -104,30 +100,31 @@ createTempleCard(temples);
 const allTemples = document.querySelector("#all");
 allTemples.addEventListener("click", () => {
     createTempleCard(temples);
+    document.querySelector("h1").textContent = "Home";
 });
 
 const oldTemples = document.querySelector("#old");
 oldTemples.addEventListener("click", () => {
-    // createTempleCard(temples.filter(temple => temple.dedicated.trim().split(" ") == "2002"));
-
-    // let oldTemples = temples.filter(temple => Number(temple.dedicated.trim().split(",")[0]) > 2000);
     createTempleCard(temples.filter(temple => Number(temple.dedicated.trim().split(",")[0]) < 1900));
+    document.querySelector("h1").textContent = "Temples Built Before 1900";
 });
 
 const newTemples = document.querySelector("#new");
 newTemples.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => Number(temple.dedicated.trim().split(",")[0]) > 2000));
-
+    document.querySelector("h1").textContent = "Temples Built after 2000";
 });
 
 const largeTemples = document.querySelector("#large");
 largeTemples.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.area > 90000));
+    document.querySelector("h1").textContent = "Temples Greater then 90,000 sq ft";
 });
 
 const smallTemples = document.querySelector("#small");
 smallTemples.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.area < 10000));
+    document.querySelector("h1").textContent = "Temples Less then 10,000 sq ft";
 });
 
 function createTempleCard(filteredTemples) {
@@ -142,7 +139,7 @@ function createTempleCard(filteredTemples) {
 
         name.textContent = temple.templeName;
         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-        dedication.innerHTML = `<span class="label">Dedicated:"</span> ${temple.dedicated}`;
+        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
         area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
