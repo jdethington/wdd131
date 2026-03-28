@@ -110,8 +110,9 @@ h1 {
     padding-bottom: 2rem;
 }
 
-.res-grid h3 {
+.res-grid h2 {
     padding: .5rem;
+    font-size: large;
 
 }
 
