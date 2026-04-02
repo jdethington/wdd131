@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-primary: rgb(70, 42, 226);
+    --font-primary: rgb(225, 217, 0);
+    /* change secondary colors */
+    --background-secondary: rgb(0 0 0);
+    --font-secondary: rgb(255, 255, 255);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 1500px;
+    min-width: 770px;
+}
+
+h1,
+h2 {
+    font-family: "Rye", serif;
+    font-weight: 100;
+}
+
+header,
+footer {
+    padding: 1rem;
+    background-color: var(--background-primary);
+    color: var(--font-primary);
+    /* max-width: 800px; */
+    text-align: center;
+}
+
+section {
+    margin: 2em;
+    border: 1px solid var(--background-secondary);
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+p {
+    padding-bottom: .5rem;
+}
+
+.wireframe div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.wireframe figure {
+    border: 1px solid black;
+}
+
+.wireframe figcaption {}
+
+.rye {
+    font-family: "Rye";
+}
+
+.rye span {
+    font-size: 2rem;
+}
+
+.roboto {
+    font-size: 2rem;
+}
