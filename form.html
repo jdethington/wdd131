@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wvalueth=device-wvalueth, initial-scale=1.0">
     <title>Product Review</title>
     <meta name="description" content="Product Review Form, web page week 5 for Jacob Ethington in the WDD 131 ">
     <meta name="author" content="Jacob Dwayne Ethington">
@@ -25,31 +25,31 @@
         <form action="review.html" method="get" class="form">
             <fieldset>
                 <label>Product Name
-                    <select name="product" id="product" required>
-                        <option value="" selected disabled>Choose a Product...</option>
+                    <select name="product" value="product" required>
+                        <option value="" selected disabled>Select a Product...</option>
                     </select>
                 </label>
 
                 <div>Overall Rating</div>
-                <!-- missing "value" attribute-->
-                <label>&star;<input type="radio" name="rating" id="one" required></label>
-                <label>&star;&star;<input type="radio" name="rating" id="two" required></label>
-                <label>&star;&star;&star;<input type="radio" name="rating" id="three" required></label>
-                <label>&star;&star;&star;&star;<input type="radio" name="rating" id="four" required></label>
-                <label>&star;&star;&star;&star;&star;<input type="radio" name="rating" id="five" required></label>
+                <label>&star;<input type="radio" name="rating" value="one" required></label>
+                <label>&star;&star;<input type="radio" name="rating" value="two" required></label>
+                <label>&star;&star;&star;<input type="radio" name="rating" value="three" required></label>
+                <label>&star;&star;&star;&star;<input type="radio" name="rating" value="four" required></label>
+                <label>&star;&star;&star;&star;&star;<input type="radio" name="rating" value="five" required></label>
 
-                <label>Date of Installation <input type="date" name="install" id="date" required></label>
+                <label>Date of Installation <input type="date" name="install" value="date" required></label>
 
-                <div>Which features did you find useful in the product?<br>(Check all that apply)</div>
-                <label><input type="checkbox" name="design">Design</label>
-                <label><input type="checkbox" name="durability">Durability</label>
-                <label><input type="checkbox" name="easy">Ease of Use</label>
-                <label><input type="checkbox" name="performance">Performance</label>
+                <div>Which features dvalue you find useful in the product?<br>(Check all that apply)</div>
+                <label><input type="checkbox" name="design" value="yes">Design</label>
+                <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="easy" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes">Performance</label>
 
                 <label>Written Review <span>(optional)</span>
-                    <textarea name="review" rows="5" cols="30">Write a review</textarea></label><!-- Check cols -->
+                    <textarea name="review" id="review" rows="5"
+                        cols="30">Write a review</textarea></label><!-- Check cols -->
 
-                <label>Your Name <span>(optional)</span><input type="text" name="user" id="user"></label>
+                <label>Your Name <span>(optional)</span><input type="text" name="user" value="user"></label>
 
                 <input type="submit" value="Post My Review">
             </fieldset>
@@ -58,8 +58,8 @@
 
 
     <footer>
-        <p>&copy;<span id="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+        <p>&copy;<span value="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona</p>
+        <p>Last Modified: <span value="lastModified"></span></p>
     </footer>
 </body>
 
