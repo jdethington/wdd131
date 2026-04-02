@@ -4,13 +4,33 @@
     box-sizing: border-box;
 }
 
-.form {
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+.form fieldset {
     margin: 2rem 0;
     border: 1px solid #ccc;
     border-radius: 6px;
     padding: .5rem 2%;
+    display: block;
 }
 
-.form legend {
+.form label,
+.form div {
+    color: #445ba9;
     display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.form input,
+.form select {
+    display: block;
+}
+
+/* .form input[type="radio"], */
+.form input[type="checkbox"] {
+    margin-right: 6px;
 }

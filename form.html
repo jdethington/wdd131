@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="Form web page week 5 for Jacob Ethington in the WDD 131 ">
+    <title>Product Review</title>
+    <meta name="description" content="Product Review Form, web page week 5 for Jacob Ethington in the WDD 131 ">
     <meta name="author" content="Jacob Dwayne Ethington">
 
     <link rel="shortcut icon" href="images/temple.ico" type="image/x-icon">
@@ -21,33 +21,40 @@
 
         <h1>Product Review Form</h1>
     </header>
-    <Main>
+    <main>
         <form action="review.html" method="get" class="form">
-            <label>Product Name
-                <select name="product" id="product" required>
-                    <option value="" selected disabled>Select a Product...</option>
-                </select>
-            </label>
-            <label>Overall Rating
+            <fieldset>
+                <label>Product Name
+                    <select name="product" id="product" required>
+                        <option value="" selected disabled>Choose a Product...</option>
+                    </select>
+                </label>
+
+                <div>Overall Rating</div>
+                <!-- missing "value" attribute-->
                 <label>&star;<input type="radio" name="rating" id="one" required></label>
                 <label>&star;&star;<input type="radio" name="rating" id="two" required></label>
                 <label>&star;&star;&star;<input type="radio" name="rating" id="three" required></label>
                 <label>&star;&star;&star;&star;<input type="radio" name="rating" id="four" required></label>
                 <label>&star;&star;&star;&star;&star;<input type="radio" name="rating" id="five" required></label>
-            </label>
-            <label>Date of Installation <input type="date" name="install" id="date" required></label>
-            <div>Which features did you find useful in the product?</div>
-            <div>(Check all that apply)</div>
-            <label><input type="checkbox" name="design" id="">Design</label>
-            <label><input type="checkbox" name="durability" id="">Durability</label>
-            <label><input type="checkbox" name="easy" id="">Ease of Use</label>
-            <label><input type="checkbox" name="performance" id="">Performance</label>
-            <label>Written Review <span id="optional">(optional)</span></label>
-            <input type="textarea" name="review" id="">
-            <label for="">Your Name <input type="text" name="user" id="user"></label>
-            <input type="submit" value="Post My Review">
+
+                <label>Date of Installation <input type="date" name="install" id="date" required></label>
+
+                <div>Which features did you find useful in the product?<br>(Check all that apply)</div>
+                <label><input type="checkbox" name="design" id="">Design</label>
+                <label><input type="checkbox" name="durability" id="">Durability</label>
+                <label><input type="checkbox" name="easy" id="">Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="">Performance</label>
+
+                <label>Written Review <span id="optional">(optional)</span>
+                    <textarea name="review" rows="5" cols="30">Write a review</textarea></label><!-- Check cols -->
+
+                <label>Your Name <span id="optional">(optional)</span><input type="text" name="user" id="user"></label>
+
+                <input type="submit" value="Post My Review">
+            </fieldset>
         </form>
-    </Main>
+    </main>
 
 
     <footer>
