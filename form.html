@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="wvalueth=device-wvalueth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review</title>
     <meta name="description" content="Product Review Form, web page week 5 for Jacob Ethington in the WDD 131 ">
     <meta name="author" content="Jacob Dwayne Ethington">
@@ -25,19 +25,24 @@
         <form action="review.html" method="get" class="form">
             <fieldset>
                 <label>Product Name
-                    <select name="product" value="product" required>
+                    <select name="product" id="product" required>
                         <option value="" selected disabled>Select a Product...</option>
+                        <option>Select a Product..2</option>
+                        <option>Select a Product..3</option>
+                        <option>Select a Product..4</option>
                     </select>
                 </label>
 
                 <div>Overall Rating</div>
-                <label>&star;<input type="radio" name="rating" value="one" required></label>
-                <label>&star;&star;<input type="radio" name="rating" value="two" required></label>
-                <label>&star;&star;&star;<input type="radio" name="rating" value="three" required></label>
-                <label>&star;&star;&star;&star;<input type="radio" name="rating" value="four" required></label>
-                <label>&star;&star;&star;&star;&star;<input type="radio" name="rating" value="five" required></label>
+                <label>&star;<input type="radio" name="rating" value="one" id="one" required></label>
+                <label>&star;&star;<input type="radio" name="rating" value="two" id="two" required></label>
+                <label>&star;&star;&star;<input type="radio" name="rating" value="three" id="three" required></label>
+                <label>&star;&star;&star;&star;<input type="radio" name="rating" value="four" id="four"
+                        required></label>
+                <label>&star;&star;&star;&star;&star;<input type="radio" name="rating" value="five" id="five"
+                        required></label>
 
-                <label>Date of Installation <input type="date" name="install" value="date" required></label>
+                <label>Date of Installation <input type="date" name="install" value="dateInstall" required></label>
 
                 <div>Which features dvalue you find useful in the product?<br>(Check all that apply)</div>
                 <label><input type="checkbox" name="design" value="yes">Design</label>
