@@ -4,12 +4,27 @@
     box-sizing: border-box;
 }
 
+header,
+main,
+footer {
+    max-width: 32em;
+    margin: auto;
+}
+
+header,
+footer {
+    background-color: antiquewhite;
+    padding: 1rem;
+    text-align: center;
+}
+
 main {
     padding: 0 2%;
     min-height: 20rem;
 }
 
 .form fieldset {
+    background-color: #eee;
     margin: 2rem 0;
     border: 1px solid #ccc;
     border-radius: 6px;

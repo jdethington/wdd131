@@ -11,7 +11,6 @@
     <link rel="shortcut icon" href="images/temple.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="styles/form.css">
-    <!-- <link rel="stylesheet" href="styles/filtered-temples-large.css"> -->
     <script src="scripts/form.js" defer></script>
 
 </head>
@@ -27,9 +26,9 @@
                 <label>Product Name
                     <select name="product" id="product" required>
                         <option value="" selected disabled>Select a Product...</option>
+                        <option>Select a Product..1</option>
                         <option>Select a Product..2</option>
                         <option>Select a Product..3</option>
-                        <option>Select a Product..4</option>
                     </select>
                 </label>
 
@@ -44,7 +43,7 @@
 
                 <label>Date of Installation <input type="date" name="install" value="dateInstall" required></label>
 
-                <div>Which features dvalue you find useful in the product?<br>(Check all that apply)</div>
+                <div>Which features do you find useful in the product?<br>(Check all that apply)</div>
                 <label><input type="checkbox" name="design" value="yes">Design</label>
                 <label><input type="checkbox" name="durability" value="yes">Durability</label>
                 <label><input type="checkbox" name="easy" value="yes">Ease of Use</label>
@@ -63,8 +62,8 @@
 
 
     <footer>
-        <p>&copy;<span value="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona</p>
-        <p>Last Modified: <span value="lastModified"></span></p>
+        <p>&copy;<span id="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 
