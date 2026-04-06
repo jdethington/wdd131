@@ -51,6 +51,7 @@
     <main>
         <h1>Course Proposal Application</h1>
         <form action="thanks.html" method="get" class="wf1">
+
             <fieldset>
                 <legend>Application Information</legend>
                 <label> First Name* <input type="text" name="fname" required></label>
@@ -59,6 +60,7 @@
                 <label> Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
                 <label> Website <input type="url" name="url" placeholder="http://"></label>
             </fieldset>
+
             <fieldset>
                 <legend>Course Information</legend>
                 <div>Audience</div>
@@ -72,9 +74,11 @@
                 <label><input type="checkbox" name="process" value="yes">Preprocessor</label>
                 <label><input type="checkbox" name="client" value="yes">FTP Client</label>
             </fieldset>
+
             <fieldset>
                 <legend>Funding</legend>
                 <label>Anticipated Completion Date <input type="date" name="completeDate"></label>
+                
                 <label>Course Subject
                     <select name="subject">
                         <option value="">Please Select &#9662;</option>
@@ -88,9 +92,10 @@
                         <option value="security">Cyber Security</option>
                     </select>
                 </label>
+                
                 <label>How Many Authors <input type="number" name="authors"></label>
-
             </fieldset>
+
             <input type="submit" value="Propose My Course">
         </form>
     </main>
