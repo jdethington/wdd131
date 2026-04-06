@@ -28,3 +28,26 @@ const products = [
         averagerating: 5.0
     }
 ];
+
+const productSelect = document.getElementById("product");
+
+products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = product.name;
+    productSelect.appendChild(option);
+})
+
+// ------ review.html -----
+function updateReviewCounter() {
+    let count = localStorage.getItem('totalReviews');
+    if (count === null) {
+        count = 0;
+    } else {
+        count = parseInt((count));
+    }
+    count++;
+    localStorage.setItem('totalReviews', count);
+    document.getElementById('reviewCount').textContent = count;
+}
+updateReviewCounter();
