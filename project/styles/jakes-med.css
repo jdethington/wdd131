@@ -1,0 +1,29 @@
+/* large view navigation ************************************/
+@media screen and (min-width: 530px) {
+    h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        /* font-size: 2rem; */
+        text-align: center;
+    }
+
+
+    /* hide hamburger button */
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        /* flex: 1 1 100%; */
+    }
+
+}

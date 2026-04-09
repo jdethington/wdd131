@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-primary: rgb(70, 42, 226);
+    --font-color-primary: rgb(225, 217, 0);
+    /* change secondary colors */
+    --background-secondary: rgb(0 0 0);
+    --font-color-secondary: rgb(255, 255, 255);
+    /* --- Fonts --- */
+    --font-header: "Rye", serif;
+    --font-body: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    /* min-width: 300px; */
+}
+
+header,
+main,
+footer {
+    min-width: 320px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--background-primary);
+    color: var(--font-color-secondary);
+}
+
+h1 {
+    padding: 0 1rem;
+    font-family: var(--font-header);
+    font-weight: 100;
+    font-size: 16px;
+    color: var(--font-color-primary);
+    text-align: center;
+}
+
+.header img {
+    height: 64px;
+    width: auto;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-primary);
+    color: var(--font-color-secondary);
+    font-size: small;
+    padding: 0rem;
+}
+
+footer div {
+    padding: 1rem;
+}
+
+
+/* .cheese  */
+section img {
+    min-width: 234px;
+    max-width: 100%;
+    height: auto;
+    padding-top: 1rem;
+}
+
+section {
+    display: grid;
+    justify-items: center;
+
+    border: 1px solid var(--background-primary);
+    background-color: var(--background-primary);
+    border-radius: 15px;
+    padding: 1rem 5vw;
+    margin: 1rem;
+    color: var(--font-color-secondary);
+}
+
+section h2 {
+    background-color: var(--background-primary);
+    text-align: center;
+    font-family: var(--font-header);
+    color: var(--font-color-primary);
+    font-weight: 100;
+    padding-bottom: 1rem;
+}
+
+.social-media img {
+    width: 32px;
+    height: auto;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: var(--font-color-secondary);
+    padding: .5rem 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    /* background-color: var(--background-primary); */
+    /* background-color: var(--background-secondary); */
+    color: var(--font-color-primary);
+    /* color: var(--font-color-secondary); */
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--font-color-secondary);
+}
+
+.navigation a:hover {
+    /* background-color: var(--background-primary); */
+    background-color: var(--background-secondary);
+    /* color: var(--font-color-primary); */
+    color: var(--font-color-secondary);
+    /* font-weight: 700; */
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+.active::before,
+.active::after {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
