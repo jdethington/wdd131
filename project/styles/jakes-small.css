@@ -76,14 +76,14 @@ footer div {
 
 
 /* .cheese  */
-section img {
+.display img {
     min-width: 234px;
     max-width: 100%;
     height: auto;
     padding-top: 1rem;
 }
 
-section {
+.display {
     display: grid;
     justify-items: center;
     justify-content: center;
@@ -95,7 +95,7 @@ section {
     color: var(--font-color-secondary);
 }
 
-section h2 {
+.display h2 {
     background-color: var(--background-primary);
     text-align: center;
     font-family: var(--font-header);
@@ -103,6 +103,21 @@ section h2 {
     font-weight: 100;
     padding-bottom: 1rem;
 }
+
+.figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.figure img {
+    max-width: 250px;
+    height: auto;
+    min-width: 150px;
+    padding-top: 1rem;
+}
+
 
 .inline {
     display: flex;
