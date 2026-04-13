@@ -27,7 +27,7 @@
         <div class="header">
             <div>
                 <div>
-                    <img src="images/logo-square.jpg" alt="Jakes Cheese Logo">
+                    <a href="index.html"><img src="images/logo-square.jpg" alt="Jakes Cheese Logo"></a>
                     <h1>Jakes Legendairy Cheese</h1>
                 </div>
                 <button type="button" id="menu" aria-label="Menu"></button>
@@ -36,36 +36,39 @@
                 <ul class="navigation">
                     <li><a href="products.html">Products</a></li>
                     <li><a href="about.html" class="active">About us</a></li>
-                    <li><a href="siteplan.html">Contact</a></li>
-                    <li><a href="#" class="active">Find us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- <li><a href="#" class="active">Find us</a></li> -->
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="cheese">
-            <!-- <a href="products.html"> -->
-            <h2>Cheeses</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorem optio unde magnam, maiores
-                aspernatur
-                est similique odio beatae sed natus quod ratione, neque non aperiam? Aut, omnis optio? Asperiores!
-            </p>
-            <img src="images/cheese-curds-bags.webp" alt="Cheese curds in bags">
-            <img src="images/cream-cheese-4flavos.webp" alt="cream cheese four flavors">
-            <!-- <button>Cheese</button> -->
-            <!-- </a> -->
-        </section>
+        <!-- Cheeses -->
         <section>
-            <h2>Cows</h2>
-            <p>we love our cows</p>
-            <img src="images/calf-looking.webp" alt="calf">
-            <img src="images/calf-sitting.webp" alt="calf sitting">
-            <img src="images/calves-eating-grain.webp" alt="calves eating grain">
+            <div class="inline">
+                <button href="#" id="curds">Curds</button>
+                <button href="#" id="cheese">
+                    <h2>Cheeses</h2>
+                </button>
+                <button href="#" id="cream">Cream</button>
+            </div>
+            <div class="cheese"></div>
         </section>
+        <!-- Cows -->
         <section>
-            <h2>something else</h2>
-            <p>Talk about something else</p>
-            <img src="images/getting-started.webp" alt="something else">
+            <div class="inline">
+                <button href="#" id="calf">Calves</button>
+                <button href="#" id="cows">
+                    <h2>Cows</h2>
+                </button>
+                <button href="#" id="cow">Cows</button>
+            </div>
+            <div class="cow">
+            </div>
+        </section>
+        <!-- Newsletter -->
+        <section>
+            <a href="about.html"> <button class="news">Subscribe to our Newsletter</button> </a>
         </section>
     </main>
     <footer>
@@ -74,9 +77,10 @@
             <p>&copy;<span id="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona</p>
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
+        <!-- <a href="contact.html"> <button class="news">Subscribe to our Newsletter</button> </a> -->
         <div class="social-media">
-            <a href="http://x.com/jdethington"><img src="images/social-media/x-logo.svg" alt="X"></a>
             <a href="http://facebook.com"><img src="images/social-media/facebook-f-logo.svg" alt="facebook"></a>
+            <a href="http://x.com/jdethington"><img src="images/social-media/x-logo.svg" alt="X"></a>
             <a href="http://youtube.com"><img src="images/social-media/youtube-play-button-icon.svg" alt="youtube"></a>
         </div>
     </footer>

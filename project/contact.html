@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakes Legendairy Cheese | WDD131 Jacob Dwayne Ethington</title>
+    <meta name="description" content="Jakes Legendairy Cheese.">
+    <meta name="author" content="Jacob Dwayne Ethington">
+
+    <link rel="shortcut icon" href="images/favicons/cheese-favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/jakes-small.css">
+    <link rel="stylesheet" href="styles/jakes-med.css">
+    <link rel="stylesheet" href="styles/jakes-large.css">
+
+    <script src="scripts/jakes-contact.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Rye&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div>
+                <div>
+                    <a href="index.html"><img src="images/logo-square.jpg" alt="Jakes Cheese Logo"></a>
+                    <h1>Jakes Legendairy Cheese</h1>
+                </div>
+                <button type="button" id="menu" aria-label="Menu"></button>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html" class="active">About us</a></li>
+                    <!-- <li><a href="siteplan.html">Contact</a></li> -->
+                    <!-- <li><a href="#" class="active">Find us</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to get in touch with us, please fill out a form below:</p>
+            <div class="forms-large">
+                <!-- question form -->
+                <form action="thank-you.html" method="get" class="wf1">
+                    <fieldset>
+                        <legend>Questions</legend>
+                        <!-- name fields -->
+                        <label for="fname">First Name <input type="text" name="fname" id="fname"
+                                placeholder="First name"></label>
+                        <label for="lname">Last Name <input type="text" name="lname" id="lname"
+                                placeholder="Last name"></label>
+                        <!-- email field -->
+                        <label for="email">Email* <input type="email" name="email" id="email"
+                                placeholder="something@example.com" required></label>
+                        <!-- checkboxes question about -->
+                        <div>What is your question about?</div>
+                        <label for="curds"><input type="checkbox" name="curds" id="curds" value="yes">Cheese
+                            Curds</label>
+                        <label for="cream"><input type="checkbox" name="cream" id="cream" value="yes">Cream
+                            Cheese</label>
+                        <label for="where"><input type="checkbox" name="where" id="where" value="yes">Where to find
+                            us</label>
+                        <label for="other"><input type="checkbox" name="other" id="other" value="yes">Other</label>
+                        <!-- Question text area -->
+                        <label for="question">Question* </label>
+                        <textarea name="question" id="question" placeholder="Your question" required></textarea>
+                        <!-- submit button -->
+                        <input type="submit" value="Ask Question">
+                    </fieldset>
+                </form>
+                <!-- review form -->
+                <form action="thank-you.html" method="get" class="wf1">
+                    <fieldset>
+                        <legend>Write a review</legend>
+                        <!-- list of products -->
+                        <label for="product">Product Name*
+                            <select name="product" id="product" required>
+                                <option value="" selected disabled>Select a Product... &#9662;</option>
+                            </select>
+                        </label>
+                        <!-- star rating -->
+                        <label>Overall Rating*</label>
+                        <div class="star-rating">
+                            <input type="radio" name="stars" id="star-a" value="5" />
+                            <label for="star-a"></label>
+
+                            <input type="radio" name="stars" id="star-b" value="4" />
+                            <label for="star-b"></label>
+
+                            <input type="radio" name="stars" id="star-c" value="3" />
+                            <label for="star-c"></label>
+
+                            <input type="radio" name="stars" id="star-d" value="2" />
+                            <label for="star-d"></label>
+
+                            <input type="radio" name="stars" id="star-e" value="1" />
+                            <label for="star-e"></label>
+                        </div>
+                        <!-- date of purchase -->
+                        <label for="date">Date of Purchase<input type="date" id="date" name="purchase" value=""
+                                required></label>
+                        <!-- review area -->
+                        <label for="question">Review* </label>
+                        <textarea name="question" id="question" placeholder="What did you think of the product?"
+                            required></textarea>
+
+                        <input type="submit" value="Post My Review">
+                    </fieldset>
+                </form>
+                <!-- newsletter form -->
+                <form action="thank-you.html" method="get" class="wf1">
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <!-- email field -->
+                        <label for="email">Email* <input type="email" name="email" id="email" required
+                                placeholder="Enter your email address"></label>
+                        <!-- submit button -->
+                        <input type="submit" value="Subscribe">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>&copy;<span id="currentYear"></span> 🐄 Jacob Dwayne Ethington 🐄 Arizona</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+        <div class="social-media">
+            <a href="http://facebook.com"><img src="images/social-media/facebook-f-logo.svg" alt="facebook"></a>
+            <a href="http://x.com/jdethington"><img src="images/social-media/x-logo.svg" alt="X"></a>
+            <a href="http://youtube.com"><img src="images/social-media/youtube-play-button-icon.svg" alt="youtube"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -45,7 +45,6 @@ const cows = [
     }
 ]
 // Cheese card display on load
-// createCheeseCard(cheeses);
 createCheeseCard(cheeses.filter(cheese => cheese.name === ""));// fix JS error on load by adding empty string filter to cheeses array
 // Cheese card 
 const cheeseBoard = document.querySelector('#cheese');
