@@ -26,7 +26,7 @@ const cows = [
     {
         name: "Cows",
         description: "Dairy cows are bred and raised primarily for milk production. They are typically larger than beef cows and have a high milk yield.",
-        image: "images/cow-standing-blurred-background.jpg"
+        image: "images/cow-standing-blurred-background.webp"
     },
     {
         name: "",
