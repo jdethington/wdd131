@@ -7,7 +7,7 @@
 :root {
     /* primary colors */
     --background-primary: rgb(70, 42, 226);
-    --font-color-primary: rgb(225, 217, 0);
+    --font-color-primary: #e1d900;
     /* change secondary colors */
     --background-secondary: rgb(0 0 0);
     --background-active: rgb(51, 44, 91);
